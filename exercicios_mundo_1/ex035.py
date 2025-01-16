@@ -15,7 +15,4 @@ c = float(input("Terceiro Valor: "))
 if (a < b + c) and (b < a + c) and (c < a + b):
     print(f"Os segmentos acima PODEM FORMAR triângulo!")
 else:
-    print(f"Os segmentos acima NÃO PODEM FORMAR triângulo!")
-
-
-    
+    print(f"Os segmentos acima NÃO PODEM FORMAR triângulo!")   
