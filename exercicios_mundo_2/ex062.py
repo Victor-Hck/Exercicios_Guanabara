@@ -9,12 +9,12 @@ print(f"{'10 TERMOS DE UMA PA':^30}")
 print('='*30)
 
 # Entrada de dados
-# Entrada de dados
 primeiro = int(input("Primeiro termo: "))
 razao = int(input("Razão: "))
 termo = primeiro
 cont = 1
 
+# Loop para mostrar até onde você deseja mostrar
 while cont <= 10:
     print(f"{termo}", end=' > ')
     termo += razao
@@ -22,6 +22,7 @@ while cont <= 10:
 
 print(f"PAUSA")
 teste = int(input("Quantos termos você quer mostrar a mais? "))
+# Repete os termos de onde parou mais mostrando mas quantas vezes o usuario deseja ver
 while teste:
     adicional = 1
     while adicional <= teste:

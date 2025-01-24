@@ -9,7 +9,10 @@ Crie um programa que leia dois valores e mostre um menu na tela:
 [5] sair do programa
 Seu programa deverá realizar a operação solicitada em cada caso.
 """
+# Importando biblioteca
 from time import sleep
+
+# Entrada de valores
 primeiro_valor = int(input("Primeiro valor: "))
 segundo_valor = int(input("Segundo valor: "))
 print("""[1] somar
@@ -19,6 +22,7 @@ print("""[1] somar
 [5] sair do programa""")
 escolha = int(input("Qual é a sua escolha?: "))
 
+# Mostra o que você deseja fazer com os numeros fornecidos
 while escolha != 5:
     if escolha == 1:
         soma = primeiro_valor + segundo_valor
@@ -47,6 +51,7 @@ while escolha != 5:
 [5] sair do programa""")
     escolha = int(input("Qual é a sua escolha?: "))
 
+# Imprimi mensagem finalizando o programa
 print(f"Finalizando...")
 print('-=-'*10)
 sleep(2)
