@@ -17,19 +17,22 @@ soma_idade = 0
 while True:
     print("Cadastre uma pessoa")
     idade = int(input("Idade: "))
-    Sexo = input("Sexo: [M/F] ").upper()
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input("Sexo: [M/F] ")).strip().upper()[0]
     
     if idade >= 18:
         soma_idade += 1
         
-    if Sexo == "M":
+    if sexo == "M":
         homens += 1
         
-    if idade <= 20 and Sexo == "F":
+    if idade < 20 and sexo == "F":
         mulheres += 1
     
-    resposta = input("Quer continuar? [S/N]").upper()
-    
+    resposta = ' '
+    while resposta not in "SN":
+        resposta = str(input("Quer continuar? [S/N] ")).strip().upper()[0]
     if resposta == "N":
         break
 
