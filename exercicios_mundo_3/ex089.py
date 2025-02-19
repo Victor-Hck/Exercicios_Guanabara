@@ -21,7 +21,7 @@ print('-=' * 13)
 print(f"{'No.':<5} {'NOME':<10} {'MÉDIA':<5}")
 print('-' * 25)
 for i, a in enumerate(lista):
-    print(f"{i:<5}{a[0]:<10}{a[2]:>6}")
+    print(f"{i:<5} {a[0]:<10} {a[2]:>5}")
     # print(f"{cont:<5} {nome:<10} {media:<5}")
 print('-' * 25)
 while True:
